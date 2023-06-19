@@ -207,7 +207,7 @@ export class ValidacaoPix {
         const regexCPF = /^\d{11}$/;
         const regexCNPJ = /^\d{14}$/;
         const regexCelular = /^\d{10,11}$/;
-        const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{1,3}$/;
         const regexChaveAleatoria = /^[a-zA-Z0-9]{32}$/;
 
         const chaveSemMascara = chavePIX.replace(/\W/g, '');
@@ -220,7 +220,7 @@ export class ValidacaoPix {
 
         if ((regexCelular.test(chaveSemMascara) && this.validarNumeroTelefone(chaveSemMascara)) && !this.validarCPF(chaveSemMascara)) {
             // Chave é um número de celular válido
-            boraFazerUmPix.chavePIX = `(${chaveSemMascara.substr(0, 2)}) ${chaveSemMascara.substr(2, 4)}-${chaveSemMascara.substr(6)}`;
+            boraFazerUmPix.chavePIX = `(${chaveSemMascara.substr(0, 2)}) ${chaveSemMascara.substr(2, 5)}-${chaveSemMascara.substr(7)}`;
             boraFazerUmPix.tipoChave = 'TELEFONE';
         } else if (regexEmail.test(chavePIX)) {
             // Chave é um email válido

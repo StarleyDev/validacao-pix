@@ -27,9 +27,6 @@ my-component.module.ts
 ```typescript
 import { ValidacaoPix } from '@starley/validacao-pix';
 
-
-@NgModule({
-})
 export class MyComponent {
 
   constructor (private validacaoPix: ValidacaoPix)
