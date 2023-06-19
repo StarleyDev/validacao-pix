@@ -25,14 +25,14 @@ Importe dentro do modulo que ira utilizar
 
 my-component.module.ts
 ```typescript
-import { IonPixProvider } from '@starley/validacao-pix';
+import { ValidacaoPix } from '@starley/validacao-pix';
 
 
 @NgModule({
 })
 export class MyComponent {
 
-  constructor (private ionPixProvider: IonPixProvider)
+  constructor (private validacaoPix: ValidacaoPix)
 
 }
 ```
@@ -44,7 +44,7 @@ Ele ira retornar os valores chavePix, tipoChave, isValid!
 my-component.ts
 ```ts
 
-let pixValido: {chavePix, tipoChave, isValid} = this.ionPixProvider.validarChavePIX(event);
+let pixValido: {chavePix, tipoChave, isValid} = this.ValidacaoPix.validarChavePIX(event);
 console.log("🚀 ~ :", pixValido)
 
 ```
