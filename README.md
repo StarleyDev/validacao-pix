@@ -44,8 +44,10 @@ Ele ira retornar os valores chavePix, tipoChave, isValid!
 my-component.ts
 ```ts
 
-let pixValido: {chavePix, tipoChave, isValid} = this.ValidacaoPix.validarChavePIX(event);
+let pixValido: {chavePix, tipoChave, isValid} = this.validacaoPix.validarChavePIX(chavePix);
 console.log("🚀 ~ :", pixValido)
+
+
 
 ```
 

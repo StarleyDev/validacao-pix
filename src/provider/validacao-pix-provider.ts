@@ -230,7 +230,7 @@ export class ValidacaoPix {
             // Chave é um CPF válido
             boraFazerUmPix.chavePIX = `${chaveSemMascara.substr(0, 3)}.${chaveSemMascara.substr(3, 3)}.${chaveSemMascara.substr(6, 3)}-${chaveSemMascara.substr(9)}`;
             boraFazerUmPix.tipoChave = 'CPF';
-        } else if (regexCNPJ.test(chaveSemMascara) && !this.validarCNPJ(chaveSemMascara)) {
+        } else if (regexCNPJ.test(chaveSemMascara) && this.validarCNPJ(chaveSemMascara)) {
             // Chave é um CNPJ válido
             boraFazerUmPix.chavePIX = `${chaveSemMascara.substr(0, 2)}.${chaveSemMascara.substr(2, 3)}.${chaveSemMascara.substr(5, 3)}/${chaveSemMascara.substr(8, 4)}-${chaveSemMascara.substr(12)}`;
             boraFazerUmPix.tipoChave = 'CNPJ';

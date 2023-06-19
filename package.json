@@ -1,6 +1,6 @@
 {
   "name": "@starley/validacao-pix",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Valida se a chavePix inserida tem um formato valido ou nao",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
