@@ -1,6 +1,6 @@
 {
   "name": "@starley/validacao-pix",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Valida se a chavePix inserida tem um formato valido ou nao",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/StarleyDev/ion-directives.git"
+    "url": "git+https://github.com/StarleyDev/validacao-pix.git"
   },
   "keywords": [
     "ionic",
@@ -31,9 +31,9 @@
   "author": "Starley Cazorla",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/StarleyDev/ion-directives/issues"
+    "url": "https://github.com/StarleyDev/validacao-pix/issues"
   },
-  "homepage": "https://github.com/StarleyDev/ion-directives#readme",
+  "homepage": "https://github.com/StarleyDev/validacao-pix#readme",
   "devDependencies": {
     "@angular/common": "^15.2.8",
     "@angular/compiler": "^15.2.8",
